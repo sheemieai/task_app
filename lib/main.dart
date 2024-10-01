@@ -79,7 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
     for (int i = 0; i < taskList.length; i++) {
       if (taskList[i]["index"] == index) {
         setState(() {
-          taskList[i]['isChecked'] = value ?? false;
+          taskList[i]["isChecked"] = value ?? false;
         });
         break;
       }
@@ -149,7 +149,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: addTaskNameToTaskList,
-        tooltip: "Add Task""",
+        tooltip: "Add Task",
         child: const Icon(Icons.add),
       ),
     );
